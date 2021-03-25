@@ -6,4 +6,14 @@ public class FalconRocket extends Rocket {
     public FalconRocket(int maximumFuel) {
         super(maximumFuel);
     }
+
+    @Override
+
+    public boolean hasEnoughFuel(int fuel) {
+        if(fuel <= currentFuel + extraFuel) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
